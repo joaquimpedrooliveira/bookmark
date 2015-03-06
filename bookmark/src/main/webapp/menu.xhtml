@@ -2,10 +2,10 @@
 	xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets">
 
 	<h:form>
-		<p:menubar>
-			<p:submenu label="#{messages['menu.bookmark']}">
-				<p:menuitem value="#{messages['menu.menuitem.new']}" url="/bookmark_edit.jsf" />
-				<p:menuitem value="#{messages['menu.menuitem.list']}" url="/bookmark_list.jsf" />
+		<p:menubar id="menu">
+			<p:submenu id="menu_bookmark" label="#{messages['menu.bookmark']}">
+				<p:menuitem id="menu_criar" value="#{messages['menu.menuitem.new']}" url="/bookmark_edit.jsf" />
+				<p:menuitem id="menu_listar" value="#{messages['menu.menuitem.list']}" url="/bookmark_list.jsf" />
 			</p:submenu>
 
 			<p:menuitem value="#{messages['menu.menuitem.quit']}" url="http://www.frameworkdemoiselle.gov.br/" action="#{securityContext.logout}" />
